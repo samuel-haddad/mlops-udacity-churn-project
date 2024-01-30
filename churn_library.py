@@ -1,4 +1,3 @@
-# library doc string
 '''
 Churn Project
 
