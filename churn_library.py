@@ -11,6 +11,7 @@ from sklearn.metrics import roc_curve, auc, classification_report
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 import joblib
 import pandas as pd
@@ -87,7 +88,7 @@ def encoder_helper(dataframe, category_lst):
     input:
             dataframe: pandas dataframe
             category_lst: list of columns that contain categorical features
-            response: string of response name [optional argument that could be used 
+            response: string of response name [optional argument that could be used
                         for naming variables or index y column]
 
     output:
@@ -121,7 +122,14 @@ def perform_feature_engineering(dataframe):
     x = pd.DataFrame()
     x[constants.keep_cols] = dataframe[constants.keep_cols]
 
-    # This cell may take up to 15-20 minutes to run
+    scaler = StandardScaler()
+
+    numeric_cols = [
+        cols for cols in x.columns if cols not in constants.cat_columns]
+    x[numeric_cols] = pd.DataFrame(
+        scaler.fit_transform(
+            dataframe[numeric_cols]))
+
     # train test split
     _x_train, _x_test, _y_train, _y_test = train_test_split(
         x, y, test_size=0.3, random_state=42)
@@ -144,7 +152,7 @@ def train_models(_x_train, _y_train):
     # Use a different solver if the default 'lbfgs' fails to converge
     # Reference:
     # https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-    lrc = LogisticRegression(solver='liblinear', max_iter=3000)
+    lrc = LogisticRegression(solver='lbfgs', max_iter=3000)
 
     cv_rfc = GridSearchCV(
         estimator=rfc,
@@ -200,13 +208,13 @@ def classification_report_image(_y_train,
                 train[0]), {
                 'fontsize': 10}, fontproperties='monospace')
         plt.text(0.01, 0.05, str(classification_report(_y_train, train[1])), {
-                 'fontsize': 10}, fontproperties='monospace')  #approach improved by OP ->monospace!
+                 'fontsize': 10}, fontproperties='monospace')  # approach improved by OP->monospace!
         plt.text(
             0.01, 0.6, str(
                 test[0]), {
                 'fontsize': 10}, fontproperties='monospace')
         plt.text(0.01, 0.7, str(classification_report(_y_test, test[1])), {
-                 'fontsize': 10}, fontproperties='monospace')  #approach improved by OP ->monospace!
+                 'fontsize': 10}, fontproperties='monospace')  # approach improved by OP->monospace!
         plt.axis('off')
 
         # save fig
