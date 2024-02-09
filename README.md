@@ -1,6 +1,7 @@
 # Predict Customer Churn
 
-**Course:** ML DevOps Engineer Nanodegree Udacity
+- **Course:** ML DevOps Engineer Nanodegree Udacity
+- **Python version:** 3.11.5
 
 ## Project Description
 The objective of this project is to implement best coding practices. For that, I should prove my skills in testing, logging, and best coding practices in the implementation of a pre-developed machine learning model. I was supposed to:
