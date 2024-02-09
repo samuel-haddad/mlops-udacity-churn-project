@@ -3,10 +3,10 @@
 **Course:** ML DevOps Engineer Nanodegree Udacity
 
 ## Project Description
-This is a project to implement best coding practices. For that, I should prove my skills for testing, logging and best coding practices on the implementation of a pre-developed machine learning model. I was supposed to:
-1. Refactor the model code and create a python file.
+The objective of this project is to implement best coding practices. For that, I should prove my skills in testing, logging, and best coding practices in the implementation of a pre-developed machine learning model. I was supposed to:
+1. Refactor the model code and create a Python file.
 2. Create a test and log file
-3. Give a good description of the project, so anyone should be able to run the code by reading this README.
+3. Give a good project description so anyone can run the code by reading this README.
 
 ## Files and data description
 
@@ -29,10 +29,10 @@ Logistic Regression and Random Forrest models (.plk files)
 <br> Notebook with project general instructions
 
 **churn_notebook.ipynb**
-<br> Python Notebook with the code to be refactored
+<br>The Python Notebook contains the code that needs refactoring
 
 **churn_library.py**
-<br> Library of functions to find customers who are likely to churn.
+<br> Library of functions to find customers likely to churn.
 
 **churn_script_logging_and_tests.py**
 <br> Contain unit tests for the churn_library.py functions. It also logs any errors and INFO messages.
@@ -40,11 +40,10 @@ Logistic Regression and Random Forrest models (.plk files)
 ## Running Files
 How do you run your files? What should happen when you run your files?
 
-To run the complete script with logging and tests just paste on terminal:
+To run the complete script with logging and tests, paste on the terminal:
 
-    ```$ ipython churn_script_logging_and_tests_solution.py```
+    $ ipython churn_script_logging_and_tests_solution.py
 
-Or if you just want to run the library:
+Or, if you want to run the library:
 
-    ```$ ipython churn_library.py```
-
+    $ ipython churn_library.py
