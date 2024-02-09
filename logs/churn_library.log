@@ -1,15 +1,15 @@
 root - INFO - SUCCESS: Testing import_data
 root - INFO - SUCCESS: Testing perform_eda
-root - INFO - SUCCESS: Testing perform_eda - churn_distribuition.png generated
-root - INFO - SUCCESS: Testing perform_eda - costumer_age_distribuition.png generated
-root - INFO - SUCCESS: Testing perform_eda - marital_status_distribuition.png generated
-root - INFO - SUCCESS: Testing perform_eda - total_trans_distribuition.png generated
+root - INFO - SUCCESS: Testing perform_eda - churn_distribution.png generated
+root - INFO - SUCCESS: Testing perform_eda - costumer_age_distribution.png generated
+root - INFO - SUCCESS: Testing perform_eda - marital_status_distribution.png generated
+root - INFO - SUCCESS: Testing perform_eda - total_trans_distribution.png generated
 root - INFO - SUCCESS: Testing perform_eda - heatmap.png generated
 root - INFO - SUCCESS: Testing encoder_helper
 root - INFO - SUCCESS: Testing perform_feature_engineering
 root - INFO - SUCCESS: Testing train_models
-root - INFO - SUCCESS: Testing train_models - rfc_model.png generated
-root - INFO - SUCCESS: Testing train_models - logistic_model.png generated
+root - INFO - SUCCESS: Testing train_models - rfc_model.pkl generated
+root - INFO - SUCCESS: Testing train_models - logistic_model.pkl generated
 root - INFO - SUCCESS: Testing classification_report_image
 root - INFO - SUCCESS: Testing classification_report_image - logistic_results.png generated
 root - INFO - SUCCESS: Testing classification_report_image - rf_results.png generated
