@@ -1,4 +1,9 @@
 # Predict Customer Churn
+![Udacity](https://img.shields.io/badge/Udacity-grey?style=for-the-badge&logo=udacity&logoColor=#5FCFEE)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![](https://api.visitorbadge.io/api/VisitorHit?user=samuel-haddad&repo=MBAUSP&countColor=#40e0d0)
+<br>
 
 - **Course:** ML DevOps Engineer Nanodegree Udacity
 - **Python version:** 3.11.5
